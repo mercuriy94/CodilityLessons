@@ -67,7 +67,7 @@ public class MissingInteger {
 
         }
 
-        return result == -1 ? prevValue == 0 ? 1 : prevValue + 1 : result;
+        return result == -1 ? prevValue + 1 : result;
     }
 
 }

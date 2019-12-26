@@ -61,69 +61,77 @@ public class GenomicRangeQuery {
 
     public static void main(String[] args) {
 
-        String S = "CAGCCTA";
-        int P[] = {2, 5, 0};
-        int Q[] = {4, 5, 6};
-        System.out.println(Arrays.toString(solution(S, P, Q)));
+        String testData1 = "CAGCCTA";
+        int P1[] = {2, 5, 0};
+        int Q1[] = {4, 5, 6};
+        System.out.println(Arrays.toString(solution(testData1, P1, Q1)));
 
+        String testData2 = "ACGCCT";
+        int P2[] = {0};
+        int Q2[] = {5};
+        System.out.println(Arrays.toString(solution(testData2, P2, Q2)));
     }
 
     public static int[] solution(String S, int[] P, int[] Q) {
-        // result: the minimal impact of each query
-        int[] result = new int[P.length];
+        int N = S.length(), M = P.length;
+        int[] result = new int[M];
 
-        // to count "A"、"C"、"G"、"T"
-        // A[i] means: num of 'a' from 0 to i-1
-        int A[] = new int[S.length() + 1];
-        int C[] = new int[S.length() + 1];
-        int G[] = new int[S.length() + 1];
-        int T[] = new int[S.length() + 1];
-        // note: we use "S.length()+1"
-        // which will let A[0]=0, C[0]=0, G[0]=0, T[0]=0
-        // becasue we will compute number of 'a' by "A[Q+1] - A[P]"
-        // we actually shift to right by one, and assume the biginning is a dummy '0'
+        int A[] = new int[N + 1];
+        int C[] = new int[N + 1];
+        int G[] = new int[N + 1];
+        int T[] = new int[N + 1];
 
-        // counting ( note: A[0]=0, C[0]=0, G[0]=0, T[0]=0 )
-        for (int i = 0; i < S.length(); i++) {
-            if (S.charAt(i) == 'A') {
-                A[i + 1] = A[i] + 1;
-                C[i + 1] = C[i];
-                G[i + 1] = G[i];
-                T[i + 1] = T[i];
-            } else if (S.charAt(i) == 'C') {
-                A[i + 1] = A[i];
-                C[i + 1] = C[i] + 1;
-                G[i + 1] = G[i];
-                T[i + 1] = T[i];
-            } else if (S.charAt(i) == 'G') {
-                A[i + 1] = A[i];
-                C[i + 1] = C[i];
-                G[i + 1] = G[i] + 1;
-                T[i + 1] = T[i];
-            } else if (S.charAt(i) == 'T') {
-                A[i + 1] = A[i];
-                C[i + 1] = C[i];
-                G[i + 1] = G[i];
-                T[i + 1] = T[i] + 1;
+        for (int i = 0; i < N; i++) {
+
+            switch (S.charAt(i)) {
+                case 'A': {
+                    A[i + 1] = A[i] + 1;
+                    C[i + 1] = C[i];
+                    G[i + 1] = G[i];
+                    T[i + 1] = T[i];
+                    break;
+                }
+                case 'C': {
+                    A[i + 1] = A[i];
+                    C[i + 1] = C[i] + 1;
+                    G[i + 1] = G[i];
+                    T[i + 1] = T[i];
+                    break;
+                }
+                case 'G': {
+                    A[i + 1] = A[i];
+                    C[i + 1] = C[i];
+                    G[i + 1] = G[i] + 1;
+                    T[i + 1] = T[i];
+                    break;
+                }
+                case 'T': {
+                    A[i + 1] = A[i];
+                    C[i + 1] = C[i];
+                    G[i + 1] = G[i];
+                    T[i + 1] = T[i] + 1;
+                    break;
+                }
             }
+
         }
 
-        // to handle the queries
-        int num_of_query = P.length; // or Q.length
-        for (int i = 0; i < num_of_query; i++) {
-            int a = A[Q[i] + 1] - A[P[i]]; // num of 'a' between P and Q
-            int c = C[Q[i] + 1] - C[P[i]]; // num of 'c' between P and Q
-            int g = G[Q[i] + 1] - G[P[i]]; // num of 'g' between P and Q
+        for (int i = 0; i < M; i++) {
 
-            if (a > 0) { // there is 'a'
+            int a = A[Q[i] + 1] - A[P[i]];
+            int c = C[Q[i] + 1] - C[P[i]];
+            int g = G[Q[i] + 1] - G[P[i]];
+
+            if (a > 0) {
                 result[i] = 1;
-            } else if (c > 0) { // there is 'c'
+            } else if (c > 0) {
                 result[i] = 2;
-            } else if (g > 0) { // there is 'g'
+            } else if (g > 0) {
                 result[i] = 3;
-            } else { // there is only 'T'
+            } else {
                 result[i] = 4;
             }
+
         }
 
         return result;
