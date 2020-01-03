@@ -43,10 +43,13 @@ public class PermMissingElem {
         int[] testData3 = {1};
         int[] testData4 = new int[0];
 
-        System.out.println(solution(testData1));
-        System.out.println(solution(testData2));
-        System.out.println(solution(testData3));
-        System.out.println(solution(testData4));
+//        System.out.println(solution(testData1));
+//        System.out.println(solution(testData2));
+//        System.out.println(solution(testData3));
+//        System.out.println(solution(testData4));
+
+        System.out.println(solution2(testData1));
+
     }
 
     public static int solution(int[] A) {
@@ -66,6 +69,17 @@ public class PermMissingElem {
         }
 
         return ++prevValue;
+    }
+
+
+    public static int solution2(int[] A) {
+        int N = A.length, xorSum = 0;
+
+        for (int i = 0; i < N; i++) {
+            xorSum ^= A[i] ^ (i + 1);
+        }
+
+        return xorSum ^ (N + 1);
     }
 
 }

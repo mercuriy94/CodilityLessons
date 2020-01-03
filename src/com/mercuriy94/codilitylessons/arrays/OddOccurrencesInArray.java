@@ -54,12 +54,19 @@ public class OddOccurrencesInArray {
         int[] testData5 = {9, 3, 9, 3, 9, 7, 7, 9, 10, 10, 5};
         int[] testData6 = {9, 3, 9, 3, 9, 7, 7, 9, 5, 8, 10, 10, 5};
 
-        System.out.println(solution(testData1));
-        System.out.println(solution(testData2));
-        System.out.println(solution(testData3));
-        System.out.println(solution(testData4));
-        System.out.println(solution(testData5));
-        System.out.println(solution(testData6));
+//        System.out.println(solution(testData1));
+//        System.out.println(solution(testData2));
+//        System.out.println(solution(testData3));
+//        System.out.println(solution(testData4));
+//        System.out.println(solution(testData5));
+//        System.out.println(solution(testData6));
+
+//        System.out.println(solution2(testData1));
+        System.out.println(solution2(testData2));
+//        System.out.println(solution2(testData3));
+//        System.out.println(solution2(testData4));
+//        System.out.println(solution2(testData5));
+//        System.out.println(solution2(testData6));
 
     }
 
@@ -85,6 +92,21 @@ public class OddOccurrencesInArray {
         }
 
         return prevValue;
+    }
+
+
+    public static int solution2(int[] A) {
+        if (A.length == 0)
+            return 0;
+
+        int unpaired;
+        unpaired = A[0]; // initial
+
+        for (int i = 1; i < A.length; i++) {
+            unpaired ^= A[i]; // xor
+        }
+
+        return unpaired; // return the unpaired value
     }
 
 }
