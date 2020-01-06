@@ -184,7 +184,6 @@ public class Peaks {
                 break;
             }
 
-
         }
 
         return maxCountBlocks != 0 ? maxCountBlocks : 1;
