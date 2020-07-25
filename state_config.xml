@@ -97,6 +97,9 @@
     <param id="P2PSamsungPay">
         <pair id="enabled">true</pair>
     </param>
+    <param id="P2PFinalScreenError">
+        <pair id="enabled">true</pair>
+    </param>
     <param id="ChangeLocaleService">
         <pair id="enabled">true</pair>
     </param>
@@ -112,6 +115,8 @@
         <pair id="sberKidsPaymentHistory">true</pair>
         <pair id="sberKidsMaxHistorySize">true</pair>
         <pair id="sberKidsOperationDetails">true</pair>
+        <pair id="sberKidsCardIssue">true</pair>
+        <pair id="sberKidsEnterQrCode">true</pair>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
                 <pair id="sberKidsAvailable">true</pair>
@@ -215,78 +220,6 @@
     </param>
     <param id="CreditReportERIB">
         <pair id="enabled">true</pair>
-        <pair id="creditReportERIBGetpdfEnabled">true</pair>
-        <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        <map id="ift-node1.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node2.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node1-mp.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node2-mp.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node4-mp.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node5-mp.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node6-mp.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node7-mp.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="ift-node8-mp.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="mobile.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="mobile4.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="psinode2.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="psinode4.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
-        <map id="psinode1.testonline.sberbank.ru">
-            <pair id="enabled">true</pair>
-            <pair id="creditReportERIBGetpdfEnabled">true</pair>
-            <pair id="creditReportERIBDeeplinkEnabled">true</pair>
-        </map>
     </param>
     <param id="CreditHistoryNotificationsService">
         <pair id="enabled">true</pair>
@@ -347,9 +280,9 @@
                 <pair id="creditHistoryNotificationsAutoPayEnabled">true</pair>
                 <map id="serviceAutoPaymentProviderParams">
                     <pair id="billing">344</pair>
-                    <pair id="serviceId">5000648860</pair>
-                    <pair id="providerId">5000648860</pair>
-                    <pair id="durationMonths">1</pair>
+                    <pair id="serviceId">707224</pair>
+                    <pair id="providerId">707224</pair>
+                    <pair id="durationMonths">ONCE_IN_MONTH</pair>
                     <pair id="maxsum">300</pair>
                 </map>
             </map>
@@ -360,9 +293,9 @@
                 <pair id="creditHistoryNotificationsAutoPayEnabled">true</pair>
                 <map id="serviceAutoPaymentProviderParams">
                     <pair id="billing">344</pair>
-                    <pair id="serviceId">5000648860</pair>
-                    <pair id="providerId">5000648860</pair>
-                    <pair id="durationMonths">1</pair>
+                    <pair id="serviceId">707224</pair>
+                    <pair id="providerId">707224</pair>
+                    <pair id="durationMonths">ONCE_IN_MONTH</pair>
                     <pair id="maxsum">300</pair>
                 </map>
             </map>
@@ -779,7 +712,7 @@
             </map>
             <map id="mobile.sberbank.ru">
                 <pair id="enabled">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node1.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
@@ -788,7 +721,7 @@
             <map id="ift-node2.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
                 <pair id="techBreak">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node1-mp.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
@@ -800,47 +733,47 @@
                 <pair id="smartSearch">true</pair>
                 <pair id="deeplink">true</pair>
                 <pair id="techBreak">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node3-mp.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node4-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node5-mp.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node6-mp.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="psinode2.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="psinode4.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node7-mp.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="ift-node8-mp.testonline.sberbank.ru">
                 <pair id="enabled">false</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="psinode1.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
             <map id="194.186.207.23">
                 <pair id="enabled">true</pair>
-                <pair id="useCardOptionsFlag">true</pair>
+                <pair id="useCardOptionsFlag">false</pair>
             </map>
         </map>
     </param>
@@ -1045,6 +978,7 @@
                 <pair id="ikaotransliteration">false</pair>
                 <pair id="apiv2">true</pair>
                 <pair id="offersDebitCardsScreenEnable">true</pair>
+                <pair id="DebitCardOrderSalary">true</pair>
             </map>
             <map id="ift-node1-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -1055,6 +989,7 @@
                 <pair id="ikaotransliteration">false</pair>
                 <pair id="apiv2">true</pair>
                 <pair id="offersDebitCardsScreenEnable">false</pair>
+                <pair id="DebitCardOrderSalary">true</pair>
             </map>
             <map id="ift-node7-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -1065,6 +1000,18 @@
                 <pair id="ikaotransliteration">false</pair>
                 <pair id="apiv2">true</pair>
                 <pair id="offersDebitCardsScreenEnable">true</pair>
+                <pair id="DebitCardOrderSalary">true</pair>
+            </map>
+            <map id="ift-node10-mp.testonline.sberbank.ru">
+                <pair id="enabled">true</pair>
+                <pair id="fatkashow">false</pair>
+                <pair id="ufsbranches">true</pair>
+                <pair id="ufshistory">true</pair>
+                <pair id="digitalcardshow">true</pair>
+                <pair id="ikaotransliteration">false</pair>
+                <pair id="apiv2">true</pair>
+                <pair id="offersDebitCardsScreenEnable">true</pair>
+                <pair id="DebitCardOrderSalary">true</pair>
             </map>
             <map id="ift-node2-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -1075,6 +1022,7 @@
                 <pair id="ikaotransliteration">false</pair>
                 <pair id="apiv2">true</pair>
                 <pair id="offersDebitCardsScreenEnable">true</pair>
+                <pair id="DebitCardOrderSalary">true</pair>
             </map>
             <map id="ift-node5-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -1085,6 +1033,7 @@
                 <pair id="ikaotransliteration">false</pair>
                 <pair id="apiv2">true</pair>
                 <pair id="offersDebitCardsScreenEnable">true</pair>
+                <pair id="DebitCardOrderSalary">true</pair>
             </map>
             <map id="ift-node4-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -1095,6 +1044,7 @@
                 <pair id="ikaotransliteration">true</pair>
                 <pair id="apiv2">true</pair>
                 <pair id="offersDebitCardsScreenEnable">true</pair>
+                <pair id="DebitCardOrderSalary">true</pair>
             </map>
             <map id="psinode2.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -2128,32 +2078,6 @@
         <pair id="ArithmeticProgressionMoneyboxCreation">true</pair>
         <pair id="ArithmeticProgressionMoneyboxShow">true</pair>
         <pair id="ArithmeticProgressionMoneyboxEditing">true</pair>
-        <map id="nodes">
-            <map id="mobile.sberbank.ru">
-                <pair id="DebitRoundingMoneyboxCreation">true</pair>
-                <pair id="DebitRoundingMoneyboxShow">true</pair>
-                <pair id="DebitRoundingMoneyboxEditing">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxCreation">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxShow">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxEditing">true</pair>
-            </map>
-            <map id="ift-node2-mp.testonline.sberbank.ru">
-                <pair id="DebitRoundingMoneyboxCreation">true</pair>
-                <pair id="DebitRoundingMoneyboxShow">true</pair>
-                <pair id="DebitRoundingMoneyboxEditing">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxCreation">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxShow">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxEditing">true</pair>
-            </map>
-            <map id="ift-node4-mp.testonline.sberbank.ru">
-                <pair id="DebitRoundingMoneyboxCreation">true</pair>
-                <pair id="DebitRoundingMoneyboxShow">true</pair>
-                <pair id="DebitRoundingMoneyboxEditing">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxCreation">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxShow">true</pair>
-                <pair id="ArithmeticProgressionMoneyboxEditing">true</pair>
-            </map>
-        </map>
     </param>
     <param id="fundInfo">
         <pair id="enabled">true</pair>
@@ -2176,9 +2100,10 @@
     </param>
     <param id="newmarketplace">
         <pair id="enabled">true</pair>
-        <pair id="marketplaceBackendStandaloneJson">https://test.stat.online.sberbank.ru/SUPERAPP/sbolconfig/android.catalog.json</pair>
-        <pair id="colorStartDate">1593000029</pair>
-        <pair id="colorFinishDate">1593000629</pair>
+        <pair id="marketplaceBackendStandaloneJson">https://test.stat.online.sberbank.ru/SUPERAPP/sbolconfig/android.catalog.json
+</pair>
+        <pair id="colorStartDate">1595231143</pair>
+        <pair id="colorFinishDate">1595231443</pair>
         <pair id="colorHeader">#08a652</pair>
         <pair id="colorFooter">#FFFFFF</pair>
         <pair id="catalogTargetAnimation">true</pair>
@@ -2391,7 +2316,6 @@
                 <pair id="marketplaceExternalUrlSupportEnabled">true</pair>
                 <pair id="marketplaceAutoRotationPromoEnabled">ftrue</pair>
                 <pair id="cacheMarketplaceImageEnabled">false</pair>
-                <pair id="marketplacePersonalOffersEnabled">true</pair>
                 <pair id="marketplaceHelpTargetMapEntryEnabled">false</pair>
                 <pair id="marketplaceBottomNavigationEntryEnabled">true</pair>
                 <pair id="marketplaceCoreProductsBlockEnabled">true</pair>
@@ -2406,7 +2330,6 @@
                 <pair id="marketplaceExternalUrlSupportEnabled">true</pair>
                 <pair id="marketplaceAutoRotationPromoEnabled">ftrue</pair>
                 <pair id="cacheMarketplaceImageEnabled">false</pair>
-                <pair id="marketplacePersonalOffersEnabled">true</pair>
                 <pair id="marketplaceHelpTargetMapEntryEnabled">false</pair>
                 <pair id="marketplaceBottomNavigationEntryEnabled">true</pair>
                 <pair id="marketplaceCoreProductsBlockEnabled">true</pair>
@@ -2439,7 +2362,6 @@
                 <pair id="marketplaceExternalUrlSupportEnabled">true</pair>
                 <pair id="marketplaceAutoRotationPromoEnabled">true</pair>
                 <pair id="cacheMarketplaceImageEnabled">true</pair>
-                <pair id="marketplacePersonalOffersEnabled">true</pair>
                 <pair id="marketplaceBottomNavigationEntryEnabled">false</pair>
                 <pair id="marketplaceCoreProductsBlockEnabled">true</pair>
                 <pair id="marketplaceMainScreenProductOffersHide">true</pair>
@@ -2861,6 +2783,12 @@ st
 		    </map>
         </map>
     </param>
+    <param id="BudgetFlags">
+        <pair id="V.4.0.BudgetEnabled">true</pair>
+        <pair id="IncomeSuggestsEnabled">true</pair>
+        <pair id="OutcomeSuggestsShowEnabled">true</pair>
+        <pair id="UpdateBannerEnabled">true</pair>
+    </param>
     <param id="PFMTipsCloseEmptyQuizCount">
         <pair id="enabled">false</pair>
         <pair id="value">0.25</pair>
@@ -3107,14 +3035,14 @@ st
         <pair id="IPCallPriorityEnabled">true</pair>
         <pair id="IPCallNewDefaultEnabled">true</pair>
         <pair id="expandCallDialogNewEnabled">false</pair>
-        <pair id="expandCallDialogEnabled">false</pair>
+        <pair id="expandCallDialogEnabled">true</pair>
         <pair id="smartSearchCallEnabled">true</pair>
         <pair id="enabledInOtherEntryPoints">true</pair>
         <pair id="enabledInOperationConfirmEntryPoints">true</pair>
         <pair id="enabledInBiometryConfirmEntryPoints">true</pair>
         <pair id="autoIpCallDefaultToggleValueEnabled">true</pair>
-        <pair id="isNewCertificateAugust2022Enabled">false</pair>
-        <pair id="IPCallDefaultEnabled">true</pair>
+        <pair id="isNewCertificateAugust2022Enabled">true</pair>
+        <pair id="IPCallDefaultEnabled">false</pair>
         <pair id="voipDeeplinkEnabled">true</pair>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
@@ -3375,8 +3303,8 @@ st
                 <pair id="isNewCertificateOnVersion85Enabled">false</pair>
                 <pair id="isEncryptedPhoneNumberAuthorizationEnabled">true</pair>
                 <pair id="isIPCallRatingEnabled">true</pair>
-                <pair id="periodForShowIPCallRating">0</pair>
-                <pair id="probabilityForShowIPCallRating">1</pair>
+                <pair id="periodForShowIPCallRating">10</pair>
+                <pair id="probabilityForShowIPCallRating">0.5</pair>
                 <pair id="isSendIPCallParamsToFraudMonEnabled">true</pair>
                 <pair id="IPCallPriorityEnabled">true</pair>
                 <pair id="IPCallDefaultEnabled">true</pair>
@@ -3395,8 +3323,8 @@ st
                 <pair id="isNewCertificateOnVersion85Enabled">false</pair>
                 <pair id="isEncryptedPhoneNumberAuthorizationEnabled">true</pair>
                 <pair id="isIPCallRatingEnabled">true</pair>
-                <pair id="periodForShowIPCallRating">0</pair>
-                <pair id="probabilityForShowIPCallRating">1</pair>
+                <pair id="periodForShowIPCallRating">10</pair>
+                <pair id="probabilityForShowIPCallRating">0.5</pair>
                 <pair id="isSendIPCallParamsToFraudMonEnabled">true</pair>
                 <pair id="IPCallPriorityEnabled">true</pair>
                 <pair id="IPCallDefaultEnabled">true</pair>
@@ -3415,8 +3343,8 @@ st
                 <pair id="isNewCertificateOnVersion85Enabled">false</pair>
                 <pair id="isEncryptedPhoneNumberAuthorizationEnabled">false</pair>
                 <pair id="isIPCallRatingEnabled">true</pair>
-                <pair id="periodForShowIPCallRating">0</pair>
-                <pair id="probabilityForShowIPCallRating">1</pair>
+                <pair id="periodForShowIPCallRating">10</pair>
+                <pair id="probabilityForShowIPCallRating">0.5</pair>
                 <pair id="isSendIPCallParamsToFraudMonEnabled">true</pair>
                 <pair id="IPCallPriorityEnabled">true</pair>
             </map>
@@ -4377,8 +4305,7 @@ st
         <pair id="RetailFxShowCardToCardRates">false</pair>
         <pair id="RetailFxCurrencyRatesDeeplink">false</pair>
         <pair id="RetailFxUpdateRates">true</pair>
-        <pair id="RetailFxCurrencyRatesTotalRatesScreenOpenDeposit">false</pair>
-        <pair id="RetailFxCurrencyRatesSorting">true</pair>
+        <pair id="RetailFxNewRatesScreen">true</pair>
         <map id="nodes">
             <map id="ift-node0-mp.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4390,8 +4317,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesTotalRatesScreenOpenDeposit">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">true</pair>
             </map>
             <map id="ift-node1-mp.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4403,7 +4328,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="ift-node2-mp.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4415,8 +4339,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
-                <pair id="RetailFxCurrencyRatesTotalRatesScreenOpenDeposit">true</pair>
             </map>
             <map id="ift-node4-mp.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4428,7 +4350,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="ift-node5-mp.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4439,7 +4360,6 @@ st
                 <pair id="RetailfxShowCurrencyMetalWidgetEntryPointNotification">true</pair>
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="ift-node7-mp.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4451,7 +4371,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="psinode1.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4463,7 +4382,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="psinode2.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4475,7 +4393,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="psinode4.testonline.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4487,7 +4404,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="mobile.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4499,8 +4415,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesTotalRatesScreenOpenDeposit">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="10.21.152.7">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4512,7 +4426,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="greenfield1.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4524,7 +4437,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="greenfield2.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4536,7 +4448,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="node0.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4547,7 +4458,6 @@ st
                 <pair id="RetailfxShowCurrencyMetalWidgetEntryPointNotification">true</pair>
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="node1.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4559,7 +4469,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="node2.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4571,7 +4480,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="node3.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4583,7 +4491,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="node4.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4595,7 +4502,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="node5.online.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4607,7 +4513,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
             <map id="mobile4.sberbank.ru">
                 <pair id="ShowRatesByExtendedCurrencyList">true</pair>
@@ -4619,8 +4524,6 @@ st
                 <pair id="RetailFxShowCardToCardRates">true</pair>
                 <pair id="RetailFxCurrencyRatesDeeplink">true</pair>
                 <pair id="RetailFxUpdateRates">true</pair>
-                <pair id="RetailFxCurrencyRatesTotalRatesScreenOpenDeposit">true</pair>
-                <pair id="RetailFxCurrencyRatesSorting">false</pair>
             </map>
         </map>
     </param>
@@ -4903,6 +4806,8 @@ st
         <pair id="sber_pay_nfc_mc">true</pair>
         <pair id="sber_pay_nfc_mir">false</pair>
         <pair id="sber_pay_nfc_huawei">false</pair>
+        <pair id="sber_pay_nfc_gp">true</pair>
+        <pair id="sber_pay_nfc_hag">true</pair>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -4926,7 +4831,7 @@ st
                 <pair id="enabled">true</pair>
             </map>
             <map id="greenfield1.online.sberbank.ru">
-                <pair id="enabled">false</pair>
+                <pair id="enabled">true</pair>
             </map>
             <map id="mobile.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -5009,6 +4914,18 @@ st
         <pair id="targetService">27941</pair>
         <pair id="defaultSum">13</pair>
         <map id="nodes">
+            <map id="ift-node1-mp.testonline.sberbank.ru">
+                <pair id="targetProvider">627127</pair>
+            </map>
+            <map id="ift-node2-mp.testonline.sberbank.ru">
+                <pair id="targetProvider">627127</pair>
+            </map>
+            <map id="ift-node3-mp.testonline.sberbank.ru">
+                <pair id="targetProvider">627127</pair>
+            </map>
+            <map id="ift-node4-mp.testonline.sberbank.ru">
+                <pair id="targetProvider">627127</pair>
+            </map>
             <map id="ift-node5-mp.testonline.sberbank.ru">
                 <pair id="targetProvider">627127</pair>
             </map>
@@ -5106,6 +5023,7 @@ st
         <pair id="sberIDMerchantBeans">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/SBERBANKID/merchantList.json</pair>
         <pair id="sberIDNewAgreementSmartSearch">true</pair>
         <pair id="sberIDSSOmWebEnabled">true</pair>
+        <pair id="sberIDPushLogoutWeb">true</pair>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
                 <pair id="sberIDQrPaymentsNew">true</pair>
@@ -5299,10 +5217,14 @@ st
         <pair id="MessengerChannels_actual">true</pair>
         <pair id="MessengerCatalog">true</pair>
         <pair id="MessengerChannelsAndBusinessChatSharing">true</pair>
-        <pair id="MessengerPostcardDeepLink">true</pair>
+        <pair id="MessengerPostcardDeepLink">false</pair>
         <pair id="MessengerNewAuthInteractorEnabled">true</pair>
-        <pair id="MessengerBusinessChatPayment">false</pair>
+        <pair id="MessengerBusinessChatPayment">true</pair>
+        <pair id="MessengerPostcardSuggestion">true</pair>
         <pair id="MessengerPostcardCatalog">true</pair>
+        <pair id="MessengerOpenConversationFromForward">true</pair>
+        <pair id="ChannelsBusinessChatsSessionProlongate">true</pair>
+        <pair id="MessengerNewApi">true</pair>
         <map id="nodes">
             <map id="mobile.sberbank.ru">
                 <pair id="MessengerLogin">true</pair>
@@ -5334,7 +5256,7 @@ st
                 <pair id="MessengerCrowdFundingRenewSession">true</pair>
                 <pair id="MessengerCrowdfundingAddCreationPoint">false</pair>
                 <pair id="MessengerCrowdfundingNewDesignCreation">false</pair>
-                <pair id="MessengerCrowdfundingNewDesign2">false</pair>
+                <pair id="MessengerCrowdfundingNewDesign2">true</pair>
                 <pair id="MessengerForward">true</pair>
                 <pair id="MessengerHideSberChatBotBadge">true</pair>
                 <pair id="MessengerReply">true</pair>
@@ -5366,7 +5288,9 @@ st
                 <pair id="MessengerPostcardSuggestion">true</pair>
                 <pair id="MessengerPostcardCatalog">true</pair>
                 <pair id="MessengerOpenConversationFromForward">true</pair>
-                <pair id="MessengerBusinessChatPayment">true</pair>
+                <pair id="MessengerBusinessChatPayment">false</pair>
+                <pair id="ChannelsBusinessChatsSessionProlongate">true</pair>
+                <pair id="MessengerNewApi">true</pair>
             </map>
             <map id="mobile4.sberbank.ru">
                 <pair id="MessengerLogin">true</pair>
@@ -5398,7 +5322,7 @@ st
                 <pair id="MessengerCrowdFundingRenewSession">true</pair>
                 <pair id="MessengerCrowdfundingAddCreationPoint">false</pair>
                 <pair id="MessengerCrowdfundingNewDesignCreation">false</pair>
-                <pair id="MessengerCrowdfundingNewDesign2">false</pair>
+                <pair id="MessengerCrowdfundingNewDesign2">true</pair>
                 <pair id="MessengerForward">true</pair>
                 <pair id="MessengerHideSberChatBotBadge">true</pair>
                 <pair id="MessengerReply">true</pair>
@@ -5430,7 +5354,8 @@ st
                 <pair id="MessengerPostcardSuggestion">true</pair>
                 <pair id="MessengerPostcardCatalog">true</pair>
                 <pair id="MessengerOpenConversationFromForward">true</pair>
-                <pair id="MessengerBusinessChatPayment">true</pair>
+                <pair id="MessengerBusinessChatPayment">false</pair>
+                <pair id="ChannelsBusinessChatsSessionProlongate">true</pair>
             </map>
             <map id="mobile.sberbank.ru:4459">
                 <pair id="MessengerLogin">true</pair>
@@ -5460,7 +5385,7 @@ st
                 <pair id="MessengerCrowdFundingRenewSession">true</pair>
                 <pair id="MessengerCrowdfundingAddCreationPoint">false</pair>
                 <pair id="MessengerCrowdfundingNewDesignCreation">false</pair>
-                <pair id="MessengerCrowdfundingNewDesign2">false</pair>
+                <pair id="MessengerCrowdfundingNewDesign2">true</pair>
                 <pair id="MessengerSmartSearchChannelsInfo">true</pair>
                 <pair id="MessengerForward">true</pair>
                 <pair id="MessengerHideSberChatBotBadge">true</pair>
@@ -5486,7 +5411,8 @@ st
                 <pair id="MessengerGroupChatChangeLinkname_v2">false</pair>
                 <pair id="MessengerCatalog">false</pair>
                 <pair id="MessengerPostcardSuggestion">true</pair>
-                <pair id="MessengerBusinessChatPayment">true</pair>
+                <pair id="MessengerBusinessChatPayment">false</pair>
+                <pair id="ChannelsBusinessChatsSessionProlongate">true</pair>
             </map>
             <map id="mobile.sberbank.ru:4460">
                 <pair id="MessengerLogin">true</pair>
@@ -5516,7 +5442,7 @@ st
                 <pair id="MessengerCrowdFundingRenewSession">true</pair>
                 <pair id="MessengerCrowdfundingAddCreationPoint">false</pair>
                 <pair id="MessengerCrowdfundingNewDesignCreation">false</pair>
-                <pair id="MessengerCrowdfundingNewDesign2">false</pair>
+                <pair id="MessengerCrowdfundingNewDesign2">true</pair>
                 <pair id="MessengerSmartSearchChannelsInfo">true</pair>
                 <pair id="MessengerForward">true</pair>
                 <pair id="MessengerHideSberChatBotBadge">true</pair>
@@ -5542,7 +5468,8 @@ st
                 <pair id="MessengerGroupChatChangeLinkname_v2">false</pair>
                 <pair id="MessengerCatalog">false</pair>
                 <pair id="MessengerPostcardSuggestion">true</pair>
-                <pair id="MessengerBusinessChatPayment">true</pair>
+                <pair id="MessengerBusinessChatPayment">false</pair>
+                <pair id="ChannelsBusinessChatsSessionProlongate">true</pair>
             </map>
             <map id="node0.online.sberbank.ru">
                 <pair id="MessengerLogin">true</pair>
@@ -6771,10 +6698,11 @@ st
     <param id="offers_config">
         <pair id="enabled">true</pair>
         <pair id="offersEnabled">true</pair>
-        <pair id="pfmGatewayEnabled">true</pair>
-        <pair id="authGatewayMinMobileVersion">11.0</pair>
+        <pair id="pfmGatewayEnabled">false</pair>
+        <pair id="authGatewayMinMobileVersion">11.1</pair>
         <pair id="offersInDarkThemeEnabled">true</pair>
         <pair id="universalBannerHistoryOperationsScreenView">true</pair>
+        <pair id="universalBannerSuccessScreenView">true</pair>
         <pair id="buttonInfoBannerView">true</pair>
         <pair id="eventsServiseEnabled">true</pair>
         <pair id="youtubeApiKey">AIzaSyDEeRYnoeLnermVZPdWuV6xrrvGRp03P2A</pair>
@@ -6863,6 +6791,10 @@ st
                 <pair id="currency">RUB</pair>
                 <pair id="termDays">10</pair>
             </map>
+            <map id="searchScreen">
+                <pair id="enabled">true</pair>
+                <pair id="limit">1</pair>
+            </map>
         </map>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
@@ -6917,7 +6849,7 @@ st
                         <pair id="limit">3</pair>
                     </map>
                     <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
+                        <pair id="enabled">false</pair>
                     </map>
                     <map id="promotionScreen">
                         <pair id="enabled">true</pair>
@@ -7390,10 +7322,6 @@ st
                         <pair id="enabled">true</pair>
                         <pair id="limit">33</pair>
                     </map>
-                    <map id="successScreenTransferInternal">
-                        <pair id="enabled">true</pair>
-                        <pair id="limit">1</pair>
-                    </map>
                     <map id="mainScreenTutorial">
                         <pair id="enabled">true</pair>
                         <pair id="limit">3</pair>
@@ -7445,22 +7373,18 @@ st
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
                     </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
-                    </map>
                 </map>
             </map>
             <map id="mobile.sberbank.ru">
                 <pair id="offersEnabled">true</pair>
-                <pair id="pfmGatewayEnabled">false</pair>
-                <pair id="abTestingSuccessScreenEnabled">false</pair>
+                <pair id="pfmGatewayEnabled">true</pair>
+                <pair id="abTestingSuccessScreenEnabled">true</pair>
                 <pair id="defaultDesignSuccessScreen">b</pair>
                 <pair id="universalBannerView">true</pair>
-                <pair id="universalBannerSuccessScreenView">true</pair>
                 <map id="places">
                     <map id="mainScreenHeader">
                         <pair id="enabled">true</pair>
-                        <pair id="limit">50</pair>
+                        <pair id="limit">51</pair>
                         <pair id="tabTitle">Истории</pair>
                         <pair id="lifetimeOfCache">5</pair>
                         <pair id="cache">true</pair>
@@ -7487,7 +7411,7 @@ st
                     </map>
                     <map id="storiesMainScreen">
                         <pair id="enabled">true</pair>
-                        <pair id="limit">70</pair>
+                        <pair id="limit">50</pair>
                         <pair id="minSupportedVersionApp">9.0</pair>
                         <pair id="minFullSupportedVersionApp">9.0.0</pair>
                         <pair id="sectionEnabled">true</pair>
@@ -7505,9 +7429,6 @@ st
                     <map id="successScreen">
                         <pair id="enabled">true</pair>
                         <pair id="limit">10</pair>
-                    </map>
-                    <map id="successScreenTransferInternalTop">
-                        <pair id="enabled">true</pair>
                     </map>
                     <map id="mainScreenTutorial">
                         <pair id="enabled">true</pair>
@@ -7551,22 +7472,6 @@ st
                     <map id="transferReceiverProfileScreen">
                         <pair id="enabled">false</pair>
                         <pair id="limit">33</pair>
-                    </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
-                        <pair id="limit">1</pair>
-                        <list id="formNames">
-                            <value>ExtCardTransferIn</value>
-                            <value>ExtCardOtherIn</value>
-                            <value>ExtCardCashIn</value>
-                            <value>RurPayment</value>
-                            <value>RurPayJurSB</value>
-                            <value>InternalPayment</value>
-                        </list>
-                        <pair id="minSum">0</pair>
-                        <pair id="maxSum">100000000</pair>
-                        <pair id="currency">RUB</pair>
-                        <pair id="termDays">10</pair>
                     </map>
                 </map>
             </map>
@@ -7679,9 +7584,6 @@ st
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
                     </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
-                    </map>
                 </map>
             </map>
             <map id="ift-node0-mp.testonline.sberbank.ru">
@@ -7737,10 +7639,6 @@ st
                         <pair id="enabled">true</pair>
                         <pair id="limit">33</pair>
                     </map>
-                    <map id="successScreenTransferInternal">
-                        <pair id="enabled">true</pair>
-                        <pair id="limit">1</pair>
-                    </map>
                     <map id="mainScreenTutorial">
                         <pair id="enabled">true</pair>
                         <pair id="limit">33</pair>
@@ -7791,9 +7689,6 @@ st
                     <map id="transferReceiverProfileScreen">
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
-                    </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
                     </map>
                 </map>
             </map>
@@ -7851,7 +7746,7 @@ st
                         <pair id="limit">33</pair>
                     </map>
                     <map id="successScreenTransferInternal">
-                        <pair id="enabled">true</pair>
+                        <pair id="enabled">false</pair>
                         <pair id="limit">1</pair>
                     </map>
                     <map id="mainScreenTutorial">
@@ -7914,7 +7809,8 @@ st
                         <pair id="limit">1</pair>
                     </map>
                     <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
+                        <pair id="enabled">false</pair>
+                        <pair id="limit">1</pair>
                     </map>
                 </map>
             </map>
@@ -8030,9 +7926,6 @@ st
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
                     </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
-                    </map>
                 </map>
             </map>
             <map id="ift-node5-mp.testonline.sberbank.ru">
@@ -8146,9 +8039,6 @@ st
                     <map id="transferReceiverProfileScreen">
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
-                    </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
                     </map>
                 </map>
             </map>
@@ -8264,9 +8154,6 @@ st
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
                     </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
-                    </map>
                 </map>
             </map>
             <map id="10.21.152.7">
@@ -8377,9 +8264,6 @@ st
                     <map id="transferReceiverProfileScreen">
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
-                    </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
                     </map>
                 </map>
             </map>
@@ -8494,9 +8378,6 @@ st
                         <pair id="enabled">true</pair>
                         <pair id="limit">1</pair>
                     </map>
-                    <map id="paymentsHistoryScreen">
-                        <pair id="enabled">true</pair>
-                    </map>
                 </map>
             </map>
         </map>
@@ -8514,6 +8395,7 @@ st
         <pair id="changeCardPhoneNumber">true</pair>
         <pair id="addNewPhoneNumberSmartSearch">true</pair>
         <pair id="deeplinkNewPhoneNumber">true</pair>
+        <pair id="mobileBankActivateFlow_2">true</pair>
         <map id="nodes">
             <map id="greenfield1.online.sberbank.ru">
                 <pair id="targetTapToActivationMobileBank">true</pair>
@@ -8817,6 +8699,7 @@ st
     <param id="PushPermissions">
         <pair id="tpuRenewableReasonChangePhone">true</pair>
         <pair id="ShowNewAlertSystemPushesDisabled">true</pair>
+        <pair id="ShowNewAlertSystemPushesDisabled_11_13">true</pair>
         <pair id="KavLightScanIntervalInMinutes">3</pair>
         <pair id="operationTypeList">D4</pair>
         <pair id="pushHistoryHeadBatchSize">10</pair>
@@ -8826,6 +8709,8 @@ st
         <pair id="pushSMSCodeForm2">true</pair>
         <pair id="newTpuPlugScenarioAvailable">true</pair>
         <pair id="pushHistoryRequestPrelogin">true</pair>
+        <pair id="ButtonsInNotificationUniversalPush">true</pair>
+        <pair id="CopyCodeUniversalPush">true</pair>
         <pair id="staticSourceForUniversalNotification">https://enricher.mfms.ru/merchantIcons/</pair>
         <pair id="notificationTriggerPLAvailable">true</pair>
         <pair id="TransferSMSAdded">true</pair>
@@ -8844,7 +8729,7 @@ st
         <pair id="rusPostNotificationDetailed">true</pair>
         <pair id="ExtNotificationsListFilter">true</pair>
         <pair id="staticSourceForOwnEnrichment">https://test.stat.online.sberbank.ru/CMS/MINOR-GO/MERCHANT/</pair>
-        <pair id="MerchantNameLogoOwnEnrichment">true</pair>
+        <pair id="MerchantNameLogoOwnEnrichment_11.1">true</pair>
         <pair id="userProfileAvatarInDialogPush">true</pair>
         <pair id="TPUPushButton">true</pair>
         <pair id="SystemPushDisabledOnboardingShowPeriod">100</pair>
@@ -8856,7 +8741,11 @@ st
         <pair id="PushMarkAsRead10_15">true</pair>
         <pair id="historyDepositHideBalance">true</pair>
         <pair id="notificationListSlicedDbReading">true</pair>
+        <pair id="checkGooglePlayServicesForPush">true</pair>
         <pair id="autoGenerateFT">true</pair>
+        <pair id="MerchantTPUGeoMap">true</pair>
+        <pair id="uniPushDetail">true</pair>
+        <pair id="PushOnboardingsForEconom">true</pair>
         <map id="NotificationsListFilters">
             <map id="NotificationsListFilter0">
                 <pair id="identifier">all</pair>
@@ -8979,7 +8868,7 @@ st
                 <pair id="showOperationTypeInTPU">true</pair>
                 <pair id="autoTurnOffOperationPush">true</pair>
                 <pair id="alternativePushSettingTexts">true</pair>
-                <pair id="showSmsTextInCuteCheque">false</pair>
+                <pair id="showSmsTextInCuteCheque">true</pair>
                 <pair id="showAlertBeforeTPUDisable">true</pair>
                 <pair id="scanActivationWithPush">true</pair>
                 <pair id="rusPostNotificationDetailed">true</pair>
@@ -9001,7 +8890,7 @@ st
                 <pair id="userProfileAvatarInPush">true</pair>
                 <pair id="showNewAlertBeforeTpuDisable">true</pair>
                 <pair id="webviewInPush">true</pair>
-                <pair id="MerchantNameLogoOwnEnrichment">true</pair>
+                <pair id="MerchantNameLogoOwnEnrichment_11.1">false</pair>
                 <pair id="userProfileAvatarInDialogPush">true</pair>
                 <pair id="useHCMCloud">true</pair>
                 <pair id="TPUPushButton">true</pair>
@@ -9010,8 +8899,13 @@ st
                 <pair id="PushCoreLibEnabled_11.0">true</pair>
                 <pair id="PushMarkAsRead10_14">true</pair>
                 <pair id="autoGenerateFT">true</pair>
+                <pair id="uniPushDetail">false</pair>
+                <pair id="ButtonsInNotificationUniversalPush">true</pair>
+                <pair id="CopyCodeUniversalPush">true</pair>
                 <pair id="historyDepositHideBalance">true</pair>
+                <pair id="checkGooglePlayServicesForPush">true</pair>
                 <pair id="notificationListSlicedDbReading">true</pair>
+                <pair id="PushOnboardingsForEconom">true</pair>
                 <list id="copyAndShareNotification">
                     <value from="10.3">true</value>
                 </list>
@@ -9032,7 +8926,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
                 </list>
@@ -9134,7 +9028,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <pair id="SpasiboPartnerInPushBody">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
@@ -9207,6 +9101,8 @@ st
                 <pair id="TransferSMSAdded">false</pair>
                 <pair id="newTpuPlugScenarioAvailable">true</pair>
                 <pair id="SpasiboPartnerInPushBody">true</pair>
+                <pair id="ButtonsInNotificationUniversalPush">true</pair>
+                <pair id="CopyCodeUniversalPush">true</pair>
                 <pair id="MerchantNameLogoOwnEnrichment">true</pair>
                 <list id="importantPushOnMainScreen">
                     <value from="9.9">true</value>
@@ -9231,7 +9127,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
                 </list>
@@ -9296,7 +9192,7 @@ st
                 <pair id="showOperationTypeInTPU">true</pair>
                 <pair id="autoTurnOffOperationPush">true</pair>
                 <pair id="alternativePushSettingTexts">true</pair>
-                <pair id="showSmsTextInCuteCheque">false</pair>
+                <pair id="showSmsTextInCuteCheque">true</pair>
                 <pair id="showAlertBeforeTPUDisable">true</pair>
                 <pair id="scanActivationWithPush">true</pair>
                 <pair id="rusPostNotificationDetailed">true</pair>
@@ -9319,10 +9215,16 @@ st
                 <pair id="ShowNewAlertSystemPushesDisabled">true</pair>
                 <pair id="useHCMCloud">true</pair>
                 <pair id="TPUPushButton">true</pair>
-                <pair id="PushCoreLibEnabled">true</pair>
+                <pair id="PushCoreLibEnabled_11.0">true</pair>
+                <pair id="webviewInPush">true</pair>
                 <pair id="notificationListSlicedDbReading">false</pair>
                 <pair id="PushMarkAsRead10_14">true</pair>
+                <pair id="ButtonsInNotificationUniversalPush">true</pair>
+                <pair id="CopyCodeUniversalPush">true</pair>
+                <pair id="checkGooglePlayServicesForPush">false</pair>
                 <pair id="historyDepositHideBalance">false</pair>
+                <pair id="PushOnboardingsForEconom">true</pair>
+                <pair id="uniPushDetail">true</pair>
                 <pair id="autoGenerateFT">true</pair>
                 <list id="importantPushOnMainScreen">
                     <value from="9.9">true</value>
@@ -9347,7 +9249,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
                 </list>
@@ -9451,7 +9353,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
                 </list>
@@ -9552,7 +9454,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
                 </list>
@@ -9650,7 +9552,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
                 </list>
@@ -9749,7 +9651,7 @@ st
                     <value from="9.6">true</value>
                 </list>
                 <pair id="redesignBannerTxTPUSuggestion">true</pair>
-                <pair id="enableShortcutNotifications">true</pair>
+                <pair id="enabledShortcutNotifications">true</pair>
                 <list id="pushHistoryRequest">
                     <value from="9.0">true</value>
                 </list>
@@ -10481,6 +10383,10 @@ st
                 <pair id="enabled">true</pair>
                 <pair id="codeService">198312050409</pair>
             </map>
+            <map id="ift-node7-mp.testonline.sberbank.ru">
+                <pair id="enabled">true</pair>
+                <pair id="codeService">198312050409</pair>
+            </map>
             <map id="mobile.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <pair id="codeService">363934129116</pair>
@@ -10494,6 +10400,10 @@ st
                 <pair id="codeService">649695777512</pair>
             </map>
             <map id="node1.online.sberbank.ru">
+                <pair id="enabled">true</pair>
+                <pair id="codeService">649695777512</pair>
+            </map>
+            <map id="node0.online.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <pair id="codeService">649695777512</pair>
             </map>
@@ -10730,6 +10640,8 @@ st
         <map id="nodes">
             <map id="ift-node0-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
+                <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances.json</pair>
+                <pair id="ConfigValidPeriodSec">0</pair>
             </map>
             <map id="ift-node1-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -10746,14 +10658,18 @@ st
             <map id="ift-node4-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <pair id="RefreshEnabled">true</pair>
+                <pair id="ConfigValidPeriodSec">0</pair>
+                <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances.json</pair>
             </map>
             <map id="ift-node7-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <!--<pair id="RefreshEnabled">true</pair>-->
-                <pair id="ServiceConfigUrl">https://bitbucket.org/payment_sber/mybillsstatic/raw/master/static.json</pair>
+                <!--<pair id="ServiceConfigUrl">https://bitbucket.org/payment_sber/mybillsstatic/raw/master/static.json</pair>-->
+                <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances.json</pair>
+                <pair id="ConfigValidPeriodSec">0</pair>
             </map>
             <map id="mobile.sberbank.ru">
-                <pair id="enabled">false</pair>
+                <pair id="enabled">true</pair>
                 <!--<pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances_PSI.json</pair>-->
                 <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances_PSI_Short.json</pair>
                 <pair id="ConfigValidPeriodSec">60</pair>
@@ -10771,7 +10687,7 @@ st
                 <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances_PSI.json</pair>
             </map>
             <map id="mobile4.sberbank.ru">
-                <pair id="enabled">false</pair>
+                <pair id="enabled">true</pair>
                 <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances_PSI.json</pair>
             </map>
             <map id="greenfield1.online.sberbank.ru">
@@ -10798,6 +10714,14 @@ st
             <map id="node4.online.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/MSIB_Normal_config.json</pair>
+            </map>
+            <map id="psinode1.testonline.sberbank.ru">
+                <pair id="enabled">true</pair>
+                <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances_PSI.json</pair>
+            </map>
+            <map id="psinode2.testonline.sberbank.ru">
+                <pair id="enabled">true</pair>
+                <pair id="ServiceConfigUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/My_Bills_And_Balances_PSI.json</pair>
             </map>
         </map>
     </param>
@@ -11018,151 +10942,6 @@ st
         <pair id="old_entry">true</pair>
         <pair id="HistoryStatementEnabled">true</pair>
         <pair id="statementBinaryFile">true</pair>
-        <map id="nodes">
-            <map id="node0.online.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="node1.online.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="node2.online.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="node3.online.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="greenfield1.online.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="greenfield2.online.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">false</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="mobile.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">true</pair>
-            </map>
-            <map id="ift-node1.testonline.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">true</pair>
-            </map>
-            <map id="ift-node2.testonline.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="ift-node1-mp.testonline.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">true</pair>
-            </map>
-            <map id="ift-node2-mp.testonline.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">false</pair>
-            </map>
-            <map id="ift-node5-mp.testonline.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">true</pair>
-            </map>
-            <map id="ift-node7-mp.testonline.sberbank.ru">
-                <pair id="enabled">true</pair>
-                <pair id="statementsHistory">true</pair>
-                <pair id="statementsPdfViewer">false</pair>
-                <pair id="old_entry">true</pair>
-                <pair id="statementsSmartSearch">true</pair>
-                <pair id="referenceOnOperationTutorial">true</pair>
-                <pair id="statementsPeriodLimit">true</pair>
-                <pair id="statementBinaryFile">true</pair>
-                <pair id="HistoryStatementEnabled">true</pair>
-            </map>
-        </map>
     </param>
     <param id="StatementsAndReferencesEntryPoint">
         <pair id="enabled">true</pair>
@@ -12040,11 +11819,12 @@ st
         <pair id="bonusSpsInHistory">true</pair>
         <pair id="EnabledFromAcquiringHistory">true</pair>
         <pair id="StatusScreenConstructorForInternalPayment">true</pair>
-        <pair id="StatusScreenCustomLogo">false</pair>
+        <pair id="StatusScreenCustomLogo">true</pair>
         <pair id="HistoryDetailsMerchantPointOnMap">true</pair>
         <pair id="referenceOnOperationAll">true</pair>
         <pair id="newHeadInHistory">true</pair>
         <pair id="adInHistoryList">true</pair>
+        <pair id="StatusScreenEnterAnimation">false</pair>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
                 <pair id="externalOperationForm">true</pair>
@@ -12158,6 +11938,7 @@ st
                 <pair id="newFiltersInHistory">true</pair>
                 <pair id="creditCardCommissionInHistory">true</pair>
                 <pair id="minimalDateInHistory">12.09.2018</pair>
+                <pair id="StatusScreenEnterAnimation">true</pair>
             </map>
             <map id="greenfield2.online.sberbank.ru">
                 <pair id="externalOperationForm">true</pair>
@@ -12185,8 +11966,7 @@ st
             </map>
             <map id="mobile.sberbank.ru">
                 <pair id="statusScreenSalesSlip">false</pair>
-                <pair id="StatusScreenCustomLogo">true</pair>
-                <pair id="enabled">true</pair>
+                <pair id="StatusScreenCustomLogo">false</pair>
                 <pair id="externalOperationForm">true</pair>
                 <pair id="historyRefactoredList">true</pair>
                 <pair id="historyRouterEnabled">true</pair>
@@ -12214,6 +11994,7 @@ st
                 <pair id="bonusSpsInHistory">true</pair>
                 <pair id="EnabledFromAcquiringHistory">true</pair>
                 <pair id="StatusScreenConstructorForInternalPayment">false</pair>
+                <pair id="StatusScreenEnterAnimation">true</pair>
             </map>
             <map id="ift-node1.testonline.sberbank.ru">
                 <pair id="externalOperationForm">true</pair>
@@ -12862,9 +12643,11 @@ st
         <pair id="TwoTabsInProfile">true</pair>
         <pair id="ShowcaseBackgroundInProfile">true</pair>
         <pair id="ProfileSettingsInThirdTab">true</pair>
+        <pair id="ProfileSettingsInThirdTab_v2">true</pair>
         <pair id="ServicesInProfile">true</pair>
         <pair id="GreetingPackTask">true</pair>
         <pair id="GreetingPackTaskUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/userprofile/tasks/android/Tasks_android.json</pair>
+        <pair id="TemplatesBanner">true</pair>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
                 <pair id="DDAProfile">true</pair>
@@ -12920,6 +12703,7 @@ st
                 <pair id="TwoTabsInProfile">true</pair>
                 <pair id="ShowcaseBackgroundInProfile">true</pair>
                 <pair id="ProfileSettingsInThirdTab">false</pair>
+                <pair id="ServicesInProfile">false</pair>
             </map>
             <map id="mobile4.sberbank.ru">
                 <pair id="DDAProfile">true</pair>
@@ -12930,6 +12714,7 @@ st
                 <pair id="AvatartaskInProfile">true</pair>
                 <pair id="TwoTabsInProfile">true</pair>
                 <pair id="ProfileSettingsInThirdTab">false</pair>
+                <pair id="ServicesInProfile">false</pair>
             </map>
             <map id="ift-node0-mp.testonline.sberbank.ru">
                 <pair id="DDAProfile">true</pair>
@@ -14077,6 +13862,11 @@ st
                 <pair id="targetProvider">628651</pair>
                 <pair id="targetService">628651</pair>
             </map>
+            <map id="ift-node5-mp.testonline.sberbank.ru">
+                <pair id="targetBilling">344</pair>
+                <pair id="targetProvider">627504</pair>
+                <pair id="targetService">627504</pair>
+            </map>
             <map id="ift-node0-mp.testonline.sberbank.ru">
                 <pair id="targetBilling">344</pair>
                 <pair id="targetProvider">628480</pair>
@@ -14189,7 +13979,7 @@ st
         <map id="shortcuts">
             <map id="penalty" index="0">
                 <pair id="title">Штрафы ГИБДД</pair>
-                <pair id="icon">https://stat.online.sberbank.ru/PhizIC-res/logos/PU/7707089101.jpg</pair>
+                <pair id="icon">https://res.online.sberbank.ru/PhizIC-res/IMG/PU/01/e8/bc/587743e7bab4f25b1fd3ea4463_24020.png</pair>
                 <map id="nodes">
                     <map id="ift-node0-mp.testonline.sberbank.ru">
                         <pair id="catalogID">416352</pair>
@@ -14233,11 +14023,20 @@ st
                     <map id="node6.online.sberbank.ru">
                         <pair id="catalogID">500202753</pair>
                     </map>
+                    <map id="mobile-psinode1.testonline.sberbank.ru">
+                        <pair id="catalogID">688079</pair>
+                    </map>
+                    <map id="mobile-psinode5.testonline.sberbank.ru">
+                        <pair id="catalogID">688079</pair>
+                    </map>
+                    <map id="mobile-psinode6.testonline.sberbank.ru">
+                        <pair id="catalogID">688079</pair>
+                    </map>
                 </map>
             </map>
             <map id="fines" index="1">
                 <pair id="title">Налоги</pair>
-                <pair id="icon">https://stat.online.sberbank.ru/PhizIC-res/IMG/PU/20/63/61/2b26d928c6b985710071f62251_38347.jpg</pair>
+                <pair id="icon">https://res.online.sberbank.ru/PhizIC-res/IMG/PU/cc/76/11/b6bb5d1354e3137f641284bb8f_24006.png</pair>
                 <map id="nodes">
                     <map id="ift-node0-mp.testonline.sberbank.ru">
                         <pair id="catalogID">623139</pair>
@@ -14280,6 +14079,15 @@ st
                     </map>
                     <map id="node6.online.sberbank.ru">
                         <pair id="catalogID">500207790</pair>
+                    </map>
+                    <map id="mobile-psinode1.testonline.sberbank.ru">
+                        <pair id="catalogID">688079</pair>
+                    </map>
+                    <map id="mobile-psinode5.testonline.sberbank.ru">
+                        <pair id="catalogID">688079</pair>
+                    </map>
+                    <map id="mobile-psinode6.testonline.sberbank.ru">
+                        <pair id="catalogID">688079</pair>
                     </map>
                 </map>
             </map>
@@ -14370,7 +14178,7 @@ st
                 <pair id="enabled">false</pair>
                 <pair id="disabledWUAlertEnabled">false</pair>
                 <map id="checkIbanSwiftEnabled">
-                    <pair id="enabled">false</pair>
+                    <pair id="enabled">true</pair>
                     <pair id="DK">DK;FO;GL</pair>
                     <pair id="FR">FR;MQ;GP;NC;RE;GF;PF;YT;PM;TF;WF;BL;MF</pair>
                     <pair id="GB">GB;JE;IM</pair>
@@ -14421,7 +14229,7 @@ st
                 <pair id="INNWU">7727067410</pair>
             </map>
             <map id="ift-node1-mp.testonline.sberbank.ru">
-                <pair id="enabled">true</pair>
+                <pair id="enabled">false</pair>
                 <pair id="INNWU">7727067410</pair>
             </map>
             <map id="ift-node2-mp.testonline.sberbank.ru">
@@ -14571,7 +14379,7 @@ st
         </map>
     </param>
     <param id="paymentsInvoiceSubscriptionEnabled">
-        <pair id="enabled">false</pair>
+        <pair id="enabled">true</pair>
         <map id="nodes">
             <map id="ift-node0-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -14613,7 +14421,7 @@ st
                 <pair id="enabled">true</pair>
             </map>
             <map id="mobile.sberbank.ru">
-                <pair id="enabled">true</pair>
+                <pair id="enabled">false</pair>
             </map>
             <map id="mobile4.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -14622,7 +14430,7 @@ st
     </param>
     <param id="paymentDeduplicateServiceProvider">
         <pair id="type">setting</pair>
-        <pair id="enabled">true</pair>
+        <pair id="enabled">false</pair>
     </param>
     <param id="extEpsPaymentConfirmation">
         <pair id="enabled">true</pair>
@@ -14671,9 +14479,14 @@ st
         </map>
     </param>
     <param id="PaymentsPersonalLimitHidden">
-        <pair id="enabled">true</pair>
+        <pair id="enabled">false</pair>
+        <map id="nodes">
+            <map id="mobile.sberbank.ru">
+                <pair id="enabled">true</pair>
+            </map>
+        </map>
     </param>
-    <param id="PaymentsNewDeeplink">
+    <param id="PaymentsLauncherDeeplink">
         <pair id="enabled">true</pair>
     </param>
     <param id="Payments">
@@ -14945,11 +14758,11 @@ st
             </map>
             <map id="node1.online.sberbank.ru">
                 <pair id="enabled">true</pair>
-                <pair id="categoryID">604</pair>
+                <pair id="categoryID">1256</pair>
             </map>
             <map id="node2.online.sberbank.ru">
                 <pair id="enabled">true</pair>
-                <pair id="categoryID">500010189</pair>
+                <pair id="categoryID">3412</pair>
             </map>
             <map id="node3.online.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -14978,6 +14791,14 @@ st
             <map id="mobile4.sberbank.ru">
                 <pair id="enabled">false</pair>
                 <pair id="categoryID">500000</pair>
+            </map>
+            <map id="ift-node1-mp.testonline.sberbank.ru">
+                <pair id="enabled">true</pair>
+                <pair id="categoryID">1256</pair>
+            </map>
+            <map id="ift-node2-mp.testonline.sberbank.ru">
+                <pair id="enabled">true</pair>
+                <pair id="categoryID">3412</pair>
             </map>
         </map>
     </param>
@@ -15678,8 +15499,9 @@ st
         </map>
     </param>
     <param id="TroykaNfcPayment">
-        <pair id="enabled">true</pair>
+        <pair id="enabled">false</pair>
         <pair id="codeService">211815122836</pair>
+        <pair id="specificFiledName">CARDIMAGEREAD1</pair>
         <map id="nodes">
             <map id="ift-node0-mp.testonline.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -15728,9 +15550,15 @@ st
     <param id="DeepLinkeInvoicingPayment">
         <pair id="enabled">true</pair>
         <list id="providers">
+            <value name="&#x421;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x430; &#x413;&#x43E;&#x440;&#x43E;&#x434; &#x410;&#x43B;&#x442;&#x430;&#x439;&#x441;&#x43A;&#x43E;&#x433;&#x43E; &#x43A;&#x440;&#x430;&#x44F;" codeservice="118436920413"/>
             <value name="inDriver" codeservice="282031456838"/>
-            <value name="&#x41C;&#x43E;&#x431;&#x438;&#x43B;&#x44C;&#x43D;&#x430;&#x44F; &#x441;&#x432;&#x44F;&#x437;&#x44C;, &#x43E;&#x43F;&#x43B;&#x430;&#x442;&#x430; &#x43B;&#x44E;&#x431;&#x43E;&#x433;&#x43E; &#x43D;&#x43E;&#x43C;&#x435;&#x440;&#x430; &#x442;&#x435;&#x43B;&#x435;&#x444;&#x43E;&#x43D;&#x430;" codeservice="101170543943"/>
-            <value name="&#x411;&#x438;&#x43B;&#x430;&#x439;&#x43D;" codeservice="629053"/>
+            <value name="&#x421;&#x43B;&#x443;&#x436;&#x431;&#x430; &#x44D;&#x43A;&#x441;&#x43F;&#x43B;&#x443;&#x430;&#x442;&#x430;&#x446;&#x438;&#x438;" codeservice="449240516721"/>
+            <value name="&#x412;&#x413;&#x41C;&#x423; &#x438;&#x43C;. &#x41D;. &#x41D;. &#x411;&#x443;&#x440;&#x434;&#x435;&#x43D;&#x43A;&#x43E;" codeservice="437700155066"/>
+            <value name="&#x422;&#x435;&#x43B;&#x435;&#x432;&#x43E;&#x43A;&#x441;" codeservice="408352986804"/>
+            <value name="&#x414;&#x435;&#x442;&#x438;74" codeservice="34428985853"/>
+            <value name="&#x41C;&#x410;&#x422;&#x420;&#x418;&#x41A;&#x421; &#x442;&#x435;&#x43B;&#x435;&#x43A;&#x43E;&#x43C;" codeservice="721839163480"/>
+            <value name="&#x41F;&#x435;&#x440;&#x43C;&#x441;&#x43A;&#x430;&#x44F; &#x434;&#x438;&#x440;&#x435;&#x43A;&#x446;&#x438;&#x44F; &#x414;&#x414;" codeservice="428969859563"/>
+            <value name="&#x41C;&#x422;&#x421;" codeservice="620205059885"/>
         </list>
         <map id="nodes">
             <map id="ift-node1-mp.testonline.sberbank.ru">
@@ -15758,6 +15586,9 @@ st
                 <pair id="enabled">true</pair>
             </map>
             <map id="node6.online.sberbank.ru">
+                <pair id="enabled">true</pair>
+            </map>
+            <map id="greenfield1.online.sberbank.ru">
                 <pair id="enabled">true</pair>
             </map>
         </map>
@@ -15897,7 +15728,6 @@ st
             </map>
             <map id="ift-node5-mp.testonline.sberbank.ru">
                 <pair id="telecomHost">https://api-test.sberbank-tele.com</pair>
-                <pair id="telecomHostV2">https://api-test.sberbank-tele.com/v2</pair>
             </map>
             <map id="ift-node7-mp.testonline.sberbank.ru">
                 <pair id="telecomHost">https://api-test.sberbank-tele.com</pair>
@@ -16069,10 +15899,10 @@ st
         <pair id="enabled">true</pair>
     </param>
     <param id="gsHideIMs">
-        <pair id="enabled">true</pair>
+        <pair id="enabled">false</pair>
     </param>
     <param id="gsHideProducts">
-        <pair id="enabled">true</pair>
+        <pair id="enabled">false</pair>
     </param>
     <param id="ChangeAuthType">
         <pair id="enabled">true</pair>
@@ -16090,7 +15920,7 @@ st
         <pair id="AmountMaxPersonalLimit">1000000</pair>
     </param>
     <param id="NewDesignVisibilityProduct">
-        <pair id="enabled">true</pair>
+        <pair id="enabled">false</pair>
     </param>
     <param id="ChangeSettingGreenStreet">
         <pair id="enabled">true</pair>
@@ -16417,6 +16247,9 @@ st
         <pair id="enabled">true</pair>
     </param>
     <param id="MultiCurrencyCardMetrics">
+        <pair id="enabled">true</pair>
+    </param>
+    <param id="MulticurrencyCard_Conversions_Metals">
         <pair id="enabled">true</pair>
     </param>
     <param id="MulticurrencyCardFM">
@@ -17033,7 +16866,7 @@ st
         </map>
     </param>
     <param id="EscrowAccounts">
-        <pair id="enabled">true</pair>
+        <pair id="enabled">false</pair>
         <map id="nodes">
             <map id="node0.online.sberbank.ru">
                 <pair id="enabled">true</pair>
@@ -17456,19 +17289,29 @@ st
     <param id="Biolimits">
         <pair id="enabled">true</pair>
         <pair id="AllTariffsAndLimits">true</pair>
-        <pair id="TariffsLinkV2">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/tariffs_v2.xml</pair>
+        <pair id="TariffsAndLimitsByCards">true</pair>
+        <pair id="CreditWithDebitCardsTariffs">true</pair>
+        <pair id="AllTariffsFromPayments">true</pair>
+        <pair id="AllTariffsDeeplink">true</pair>
+        <pair id="TariffsLinkV2">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/tariffs_v2.json</pair>
         <map id="nodes">
             <map id="greenfield1.online.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <pair id="AllTariffsAndLimits">true</pair>
+                <pair id="TariffsAndLimitsByCards">true</pair>
+                <pair id="CreditWithDebitCardsTariffs">true</pair>
             </map>
             <map id="node0.online.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <pair id="AllTariffsAndLimits">true</pair>
+                <pair id="TariffsAndLimitsByCards">true</pair>
+                <pair id="CreditWithDebitCardsTariffs">true</pair>
             </map>
             <map id="node1.online.sberbank.ru">
                 <pair id="enabled">true</pair>
                 <pair id="AllTariffsAndLimits">true</pair>
+                <pair id="TariffsAndLimitsByCards">true</pair>
+                <pair id="CreditWithDebitCardsTariffs">true</pair>
             </map>
         </map>
     </param>
@@ -17634,6 +17477,7 @@ st
         <pair id="StaticForCardsVoiceAssistant">true</pair>
         <pair id="urlStatVoiceAssistant">https://test.stat.online.sberbank.ru/</pair>
         <pair id="GalleryCard">true</pair>
+        <pair id="VoiceAssistantMobileSdkData">true</pair>
         <map id="nodes">
             <map id="greenfield1.online.sberbank.ru">
                 <pair id="assistantOnMainScreen1015">true</pair>
@@ -17665,24 +17509,28 @@ st
                 <pair id="emotionsEnabled">true</pair>
                 <pair id="openCloseEventsEnabled">true</pair>
                 <pair id="simpleListCardEnabled">true</pair>
+                <pair id="VoiceAssistantMobileSdkData">false</pair>
             </map>
             <map id="psinode1.testonline.sberbank.ru">
                 <pair id="openCloseEventsEnabled">true</pair>
                 <pair id="sendMessageMetadata">true</pair>
                 <pair id="assistantOnMainScreen">true</pair>
                 <pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpspsi.online.sberbank.ru/vps/</pair>
+                <pair id="VoiceAssistantMobileSdkData">false</pair>
             </map>
             <map id="psinode2.testonline.sberbank.ru">
                 <pair id="openCloseEventsEnabled">true</pair>
                 <pair id="sendMessageMetadata">true</pair>
                 <pair id="assistantOnMainScreen">true</pair>
                 <pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpspsi.online.sberbank.ru/vps/</pair>
+                <pair id="VoiceAssistantMobileSdkData">false</pair>
             </map>
             <map id="psinode4.testonline.sberbank.ru">
                 <pair id="openCloseEventsEnabled">true</pair>
                 <pair id="sendMessageMetadata">true</pair>
                 <pair id="assistantOnMainScreen">true</pair>
                 <pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpspsi.online.sberbank.ru/vps/</pair>
+                <pair id="VoiceAssistantMobileSdkData">false</pair>
             </map>
             <map id="mobile.sberbank.ru">
                 <pair id="glOkniksEnabled">true</pair>
@@ -17700,22 +17548,24 @@ st
                 <pair id="customActivityAnimationEnabled">true</pair>
                 <pair id="httpHttpsLinksEnabled">true</pair>
                 <pair id="markdownEnabled">true</pair>
-                <!--pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpspsi.online.sberbank.ru/vps/</pair-->
+                <pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpspsi.online.sberbank.ru/vps/</pair>
                 <pair id="ActivateNLP20">true</pair>
                 <pair id="emotionsEnabled">true</pair>
                 <pair id="soundsEarconEnabled">true</pair>
                 <pair id="assistantOnMainScreen1015">false</pair>
                 <pair id="StaticForCardsVoiceAssistant">false</pair>
-                <pair id="AddressBookForASR">false</pair>
+                <pair id="AddressBookForASR">true</pair>
                 <pair id="FirstSession">true</pair>
                 <pair id="deepLinkDataParamEnabled">false</pair>
                 <pair id="AssistantNewLogo">true</pair>
                 <pair id="staticContentEnabled">true</pair>
+                <pair id="VoiceAssistantMobileSdkData">false</pair>
             </map>
             <map id="mobile2.sberbank.ru">
                 <pair id="autoListeningEnabled">true</pair>
                 <pair id="openCloseEventsEnabled">true</pair>
                 <pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpspsi.online.sberbank.ru/vps/</pair>
+                <pair id="VoiceAssistantMobileSdkData">false</pair>
             </map>
             <map id="ift-node1-mp.testonline.sberbank.ru">
                 <pair id="assistantOnMainScreen">true</pair>
@@ -17733,9 +17583,10 @@ st
                 <pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpsift.online.sberbank.ru/vps/</pair>
                 <pair id="openCloseEventsEnabled">true</pair>
                 <pair id="assistantOnMainScreen1015">true</pair>
-                <pair id="AddressBookForASR">false</pair>
+                <pair id="AddressBookForASR">true</pair>
                 <pair id="FirstSession">true</pair>
                 <pair id="AssistantNewLogo">true</pair>
+                <pair id="VoiceAssistantMobileSdkData">true</pair>
             </map>
             <map id="ift-node2-mp.testonline.sberbank.ru">
                 <pair id="assistantOnMainScreen">true</pair>
@@ -17746,9 +17597,10 @@ st
                 <pair id="VoiceProcessingServiceBaseURL20">wss://nlp2vpsift.online.sberbank.ru/vps/</pair>
                 <pair id="openCloseEventsEnabled">true</pair>
                 <pair id="assistantOnMainScreen1015">true</pair>
-                <pair id="AddressBookForASR">false</pair>
+                <pair id="AddressBookForASR">true</pair>
                 <pair id="FirstSession">true</pair>
                 <pair id="AssistantNewLogo">true</pair>
+                <pair id="VoiceAssistantMobileSdkData">false</pair>
             </map>
             <map id="ift-node7-mp.testonline.sberbank.ru">
                 <pair id="paymentSystemIconsEnabled">false</pair>
@@ -17770,8 +17622,8 @@ st
                 <pair id="AddressBookForASR">false</pair>
                 <pair id="FirstSession">true</pair>
                 <pair id="AssistantNewLogo">true</pair>
-                <pair id="staticContentEnabled">false</pair>
-                <pair id="StaticForCardsVoiceAssistant">true</pair>
+                <pair id="staticContentEnabled">true</pair>
+                <pair id="StaticForCardsVoiceAssistant">false</pair>
             </map>
         </map>
     </param>
@@ -17829,7 +17681,7 @@ st
     </param>
     <param id="PullToRefreshUpdateBalance">
         <pair id="enabled">true</pair>
-        <pair id="checkPush">false</pair>
+        <pair id="checkPush">true</pair>
     </param>
     <param id="NewDeeplinkScheme">
         <pair id="enabled">true</pair>
@@ -17894,12 +17746,12 @@ st
         <pair id="minShowTimeT2Enabled">true</pair>
         <pair id="packsGalleryEnabled">false</pair>
         <pair id="packsImageDetailsEnabled">false</pair>
-        <pair id="dataStorageMigrationEnabled">false</pair>
+        <pair id="dataStorageMigrationEnabled">true</pair>
         <pair id="packsUserImageEnabled">false</pair>
         <pair id="packsAppealChangeEnabled">false</pair>
         <pair id="packsGreetingDescriptionEnabled">true</pair>
         <pair id="packsTargetDeepLinkEnabled">true</pair>
-        <pair id="packsParamsUrl">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/packs_android_view_broken.json</pair>
+        <pair id="packsParamsUrl">http://178.62.234.252/lst/packs_android_autoremove.json</pair>
         <pair id="packsParamsUseHead">true</pair>
         <pair id="packsParamsUpdateJitter">0</pair>
         <map id="nodes">
@@ -18102,6 +17954,10 @@ st
     <param id="useremotUserAvatarModule">
         <pair id="moduleEnabled">true</pair>
         <pair id="dynamicDefaultAvatarEnabled">true</pair>
+        <pair id="dynamicDefaultAvatarParamsV1Url">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/avatar/man.png</pair>
+        <pair id="dynamicDefaultAvatarParamsV2Url">https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/avatar/woman.png</pair>
+        <pair id="defaultAvatarPV1FV">1</pair>
+        <pair id="defaultAvatarPV2FV">1</pair>
         <pair id="avatarsPresetsEnabled">true</pair>
         <map id="nodes">
             <map id="ift-node2-mp.testonline.sberbank.ru">
@@ -18191,6 +18047,7 @@ st
     <param id="sberbankDigitalPremium">
         <pair id="enabled">true</pair>
         <pair id="JoinDigitalPremium">true</pair>
+        <pair id="PrivilegesView">true</pair>
     </param>
     <param id="SberCat">
         <pair id="enabled">true</pair>
@@ -18387,6 +18244,16 @@ st
     </param>
     <param id="AuthDPANEnabled">
         <pair id="enabled">true</pair>
+    </param>
+    <param id="authBlockingScreen">
+        <pair id="enabled">true</pair>
+    </param>
+    <param id="RedesignRegistration11.2">
+        <pair id="enabled">true</pair>
+    </param>
+    <param id="RegistrationVideoManual">
+        <pair id="enabled">true</pair>
+        <pair id="url">https://www.sberbank.ru/ru/person/dist_services/inner_apps#about</pair>
     </param>
     <param id="ImaModule">
         <pair id="moduleEnabled">true</pair>
